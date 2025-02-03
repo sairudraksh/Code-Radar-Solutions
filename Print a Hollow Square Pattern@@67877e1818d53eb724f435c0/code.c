@@ -9,22 +9,14 @@ int main(){
             }
         }
         printf("\n");
-        else if(i%2!=0){
-            for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){
+            if(i==0 || i==n-1){
+                printf("*");
+            }
+            else{
                 printf(" ");
             }
         }
-        printf("\n");
-        else if(i%2==0){
-            for(int i=0;i<n;i++){
-                if(i==0 || i==n-1){
-                    printf("*");
-                }
-                else{
-                    printf(" ");
-                }
-            }
             printf("\n");
-        }
     }
 }
