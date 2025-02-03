@@ -7,7 +7,7 @@ int main(){
         for(int j=0;j<a;j++){
             cout<<"* "
         }
-        a+=2;
+        a=a+2;
         printf("\n");
     }
 }
