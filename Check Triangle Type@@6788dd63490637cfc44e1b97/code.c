@@ -4,7 +4,7 @@ int main(){
     if(a+c<b || a+b<c || b+c<a){
         printf("Invalid Triangle");
     }
-    if(a==b || a==c ||b==c){
+    if(a==b && a==c &&b==c){
         printf("Equilateral");
     }
     else if(a==b || a==c || b==c){
