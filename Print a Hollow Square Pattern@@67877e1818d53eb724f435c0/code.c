@@ -23,5 +23,6 @@ int main(){
                 }
             }
         }
+        printf("\n");
     }
 }
