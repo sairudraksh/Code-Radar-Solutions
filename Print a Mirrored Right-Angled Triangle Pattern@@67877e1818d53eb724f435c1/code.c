@@ -8,10 +8,10 @@ int main(){
         for(int j=0;j<nsp;j++){
             printf(" ");
         }
-        nsp--;
+        nsp=nsp-1;
         for(int k=0;k<nst;k++){
             printf("*");
-            nst++;
+            nst=nst+1;
         }
         printf("\n");
     }
