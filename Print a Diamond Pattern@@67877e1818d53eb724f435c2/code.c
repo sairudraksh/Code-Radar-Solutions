@@ -4,7 +4,7 @@ int main(){
     scanf("%d",&n);
     int nsp=n-1;
     int nst=1;
-    for(int i=0;i<=2*n-1;i++){
+    for(int i=0;i<=2*n;i++){
         for(int j=0;j<nsp;j++){
             printf(" ");
         }
