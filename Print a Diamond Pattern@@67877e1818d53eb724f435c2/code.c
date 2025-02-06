@@ -11,7 +11,7 @@ int main(){
         for(int k=0;k<nst;k++){
             printf("*");
         }
-        ptintf("\n");
+        printf("\n");
         if(i<=n-1){
             nsp--;
             nst=nst+2;
