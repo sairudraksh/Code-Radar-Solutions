@@ -14,11 +14,11 @@ int main(){
         ptintf("\n");
         if(nsp<=n-1){
             nsp++;
-            nst+=2;
+            nst=nst+2;
         }
         else{
             nsp++;
-            nst-=2;
+            nst=nst-2;
         }
     }
 }
