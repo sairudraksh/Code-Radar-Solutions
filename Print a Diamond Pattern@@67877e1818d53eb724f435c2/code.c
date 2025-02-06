@@ -12,7 +12,7 @@ int main(){
             printf("*");
         }
         printf("\n");
-        if(i<=n-1){
+        if(i<=n-2){
             nsp--;
             nst=nst+2;
         }
