@@ -12,8 +12,8 @@ int main(){
             printf("*");
         }
         ptintf("\n");
-        if(nsp<=n-1){
-            nsp++;
+        if(i<=n-1){
+            nsp--;
             nst=nst+2;
         }
         else{
