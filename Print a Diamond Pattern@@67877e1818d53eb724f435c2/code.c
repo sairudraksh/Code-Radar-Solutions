@@ -11,6 +11,7 @@ int main(){
         for(int k=0;k<nst;k++){
             printf("*");
         }
+        ptintf("\n");
         if(nsp<=n-1){
             nsp++;
             nst+=2;
