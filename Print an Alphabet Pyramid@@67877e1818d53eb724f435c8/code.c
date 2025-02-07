@@ -2,5 +2,11 @@
 int main(){
     int n;
     scanf("%d",&n);
-    printf("%d",1);
+    for(int i=1;i<=n;i++){
+        for(int j=65;j<=(int)'i';j++){
+            printf("%c",(char)'j');
+            printf(" ");
+        }
+        printf("\n");
+    }
 }
