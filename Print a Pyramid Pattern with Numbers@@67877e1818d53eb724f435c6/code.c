@@ -6,7 +6,7 @@ int main(){
     int nst=1;
     for(int i=1;i<=n;i++){
         for(int j=0;j<nsp;j++){
-            cout<<" ";
+            printf(" ");
         }
         for(int k=1;k<=nst;k++){
             printf("%d",k);
