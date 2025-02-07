@@ -10,7 +10,7 @@ int main(){
         }
         for(int k=1;k<=nst;k++){
             printf("%d",k);
-            print(" ");
+            printf(" ");
         }
         printf("\n");
         nsp--;
