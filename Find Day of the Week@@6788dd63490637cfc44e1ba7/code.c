@@ -23,4 +23,7 @@ int main(){
     else if(a==7){
         printf("Sunday");
     }
+    else{
+        printf("0");
+    }
 }
