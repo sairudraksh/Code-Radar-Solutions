@@ -9,7 +9,7 @@ int main(){
             break;
         }
     }
-    if(flag=false){
+    if(flag==false){
         printf("Prime")
     }
     else{
