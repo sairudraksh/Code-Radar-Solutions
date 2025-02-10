@@ -14,5 +14,8 @@ int main(){
     else if(n=='D'){
         printf("Below Average");
     }
+    else{
+        printf("Fail");
+    }
 
 }
