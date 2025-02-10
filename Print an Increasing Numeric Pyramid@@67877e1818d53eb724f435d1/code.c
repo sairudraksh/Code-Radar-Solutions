@@ -12,6 +12,8 @@ int main(){
             printf("%d",k);
             printf(" ");
         }
+        nsp--;
+        nst+=1;
         printf("\n");
     }
 }
