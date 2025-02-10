@@ -13,6 +13,8 @@ int main(){
         }
         nsp--;
         nst+=1;
+        printf("\n");
     }
     printf("\n");
+
 }
