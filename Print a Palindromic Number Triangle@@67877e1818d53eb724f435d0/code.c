@@ -11,8 +11,10 @@ int main(){
         for(int k=1;k<=nst;k++){
             printf("%d",k);
         }
-        for(int z=0;z<i;z++){
-            printf("%d",z);
+        for(int z=0;z<=i;z++){
+            if(z>0){
+                printf("%d",z);
+            }
         }
         nsp--;
         nst+=1;
