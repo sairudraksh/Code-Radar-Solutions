@@ -13,12 +13,14 @@ int main(){
         for(int j=0;j<=i;j++){
             printf("%d",ans);
             printf(" ");
+            if(ans==0){
+                ans=1;
+            }
+            else{
+                ans=0;
+            }
         }
-        if(ans==0){
-            ans=1;
-        }
-        else{
-            ans=0;
-        }
+        printf("\n");
+
     }
 }
