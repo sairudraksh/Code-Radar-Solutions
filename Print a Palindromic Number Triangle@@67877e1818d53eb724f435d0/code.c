@@ -11,15 +11,11 @@ int main(){
         for(int k=1;k<=nst;k++){
             printf("%d",k);
         }
+        for(int z=0;z<i;z++){
+            printf("%d",z);
+        }
         nsp--;
         nst+=1;
         printf("\n");
     }
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            printf("%d",j);
-        }
-        printf("\n");
-    }
-
 }
