@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main(){
-    int n;
+    char n;
     scamf("%c",&n);
     if(n=='R'){
         printf("Stop");
     }
-    if(n=='G'){
+    else if(n=='G'){
         printf("Go");
     }
-    if(n=='Y'){
+    else if(n=='Y'){
         printf("Slow Down");
     }
 
