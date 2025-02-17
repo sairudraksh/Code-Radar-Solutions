@@ -4,9 +4,9 @@ int main(){
     int b[100];
     scanf("%c",&a);
     scanf("%c",&b);
-    printf("%d",a);
+    printf("%s",a);
     printf("and");
-    printf("%d",b);
+    printf("%s",b);
 
 
 }
