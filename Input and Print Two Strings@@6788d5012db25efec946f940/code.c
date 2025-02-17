@@ -4,7 +4,7 @@ int main(){
     int b[100];
     scanf("%d",&a);
     scanf("%d",&b);
-    printf("%d",a,"and",b);
+    printf("%d",a"and"b);
 
 
 }
