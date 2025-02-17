@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    car a;
+    char a;
     scanf("%c",&a);
     int nums;
     scanf("%d",&nums);
