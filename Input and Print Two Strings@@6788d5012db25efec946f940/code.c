@@ -2,8 +2,8 @@
 int main(){
     int a[100];
     int b[100];
-    scanf("%c",&a);
-    scanf("%c",&b);
+    scanf("%s",&a);
+    scanf("%s",&b);
     printf("%s",a);
     printf("and");
     printf("%s",b);
