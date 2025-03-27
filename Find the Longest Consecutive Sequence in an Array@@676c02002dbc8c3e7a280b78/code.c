@@ -26,6 +26,7 @@ int main(){
                     else break;
                 }
             }
+            break;
         }
         if(count>maxcount) maxcount=count;
     }
