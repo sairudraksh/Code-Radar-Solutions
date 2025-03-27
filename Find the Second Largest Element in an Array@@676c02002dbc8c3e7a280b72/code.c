@@ -10,7 +10,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]>max) max=arr[i];
     }
-    int smax=INT_MIN;
+    int smax=0;
     int flagg=0;
     for(int i=0;i<n;i++){
         if(arr[i]>=smax && arr[i]<max){
