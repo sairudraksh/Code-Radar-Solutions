@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count=0;
-    int maxcount=0;
+    int maxcount=arr[0];
     int idx=0;
     for(int i=0;i<n;i++){
         int flagg=0;
