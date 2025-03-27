@@ -15,14 +15,14 @@ int main(){
             if(arr[i]>arr[j+1]){
                 for(int k=0;k<n;k++){
                     z++;
-                    if(arr[k]>arr[j]) count++;
+                    if(arr[k]<arr[j]) count++;
                     else break;
                 }
             }
             else if(arr[i]<arr[j+1]){
                 for(int l=0;l<n;l++){
                     z++;
-                    if(arr[l]<arr[j]) count++;
+                    if(arr[l]>arr[j]) count++;
                     else break;
                 }
             }
