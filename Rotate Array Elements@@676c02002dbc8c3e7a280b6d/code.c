@@ -17,6 +17,9 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    if(k>n){
+        k=k%n;
+    }
     rotatearray(0,k-1,arr);
     rotatearray(k,n-1,arr);
     rotatearray(0,n-1,arr);
