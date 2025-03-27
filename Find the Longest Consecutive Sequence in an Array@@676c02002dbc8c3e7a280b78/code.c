@@ -18,5 +18,5 @@ int main(){
         if(count>maxcount) maxcount=count;
     }
     if(count==n) printf("%d",1);
-    printf("%d",maxcount);
+    else printf("%d",maxcount);
 }
