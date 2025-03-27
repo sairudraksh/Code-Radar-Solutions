@@ -8,19 +8,27 @@ int main(){
     }
     int maxcount=1;
     int z=0;
-    int count=0;
+    int count=1;
     for(int i=z;i<n;i++){
-        count=0;
+        count=1;
         for(int j=i;j<n;j++){
-            z++;
-            if(arr[i]>arr[j]) count++;
-            else break;
-            if(arr[i]<arr[j]) count++;
-            else break;
-
+            if(arr[i]>arr[j+1]){
+                for(int k=0;k<n;k++){
+                    z++;
+                    if(arr[k]>arr[j]) count++;
+                    else break;
+                }
+            }
+            else if(arr[i]<arr[j+1]){
+                for(int l=0;l<n;l++){
+                    z++;
+                    if(arr[l]<arr[j]) count++;
+                    else break;
+                }
+            }
         }
         if(count>maxcount) maxcount=count;
     }
     if(count==n) printf("%d",1);
     else printf("%d",maxcount);
-}
+}Loading Code...
