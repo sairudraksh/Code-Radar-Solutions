@@ -7,8 +7,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count=0;
-    int flagg=0;
     for(int i=0;i<n;i++){
+        int flagg=0;
         for(int k=0;k<i;k++){
             if(arr[k]==arr[i]) flagg=1;
         }
