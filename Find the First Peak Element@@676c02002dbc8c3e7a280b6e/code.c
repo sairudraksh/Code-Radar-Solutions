@@ -19,7 +19,7 @@ int main(){
             printf("%d",arr[n-1]);
         }
         else{
-            printf("&d",found);
+            printf("%d",found);
         }
     }
 }
