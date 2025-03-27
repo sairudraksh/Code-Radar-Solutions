@@ -17,9 +17,9 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            if(count>maxcount) maxcount=count;
+            if(count>maxcount) idx=i;
             count=0;
         }
     } 
-    printf("%d",maxcount);
+    printf("%d",arr[i]);
 }
