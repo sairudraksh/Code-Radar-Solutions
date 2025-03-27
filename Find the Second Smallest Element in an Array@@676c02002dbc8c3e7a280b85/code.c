@@ -8,11 +8,11 @@ int main(){
     }
     int min=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]<min) min=arr[i]
+        if(arr[i]<min) min=arr[i];
     }
     int smin=-1;
     for(int i=0;i<n;i++){
-        if(arr[i]<smin && smin>min) smin=arr[i]
+        if(arr[i]<smin && smin>min) smin=arr[i];
     }
     printf("%d",smin);
 }
