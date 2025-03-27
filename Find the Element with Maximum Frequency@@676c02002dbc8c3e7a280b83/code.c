@@ -21,7 +21,7 @@ int main(){
             }
             if(count>maxcount){
                 maxcount=count;
-                maxelse=arr[i];
+                maxele=arr[i];
             }
         }
         count=0;
