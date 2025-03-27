@@ -14,12 +14,11 @@ int main(){
     int arr[n];
     int k;
     scanf("%d",k);
-    int n=sizeof(arr)/sizeof(arr[0]);
     rotatearray(0,k,arr);
     rotatearray(k+1,n-1,arr);
     rotatearray(0,n-1,arr);
     for(int i=0;i<n;i++){
-        printf("%d",arr[i])
+        printf("%d",arr[i]);
         printf(\n);
     }
 }
