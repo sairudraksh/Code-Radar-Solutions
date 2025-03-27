@@ -31,4 +31,4 @@ int main(){
     }
     if(count==n) printf("%d",1);
     else printf("%d",maxcount);
-}Loading Code...
+}
