@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count=0;
-    int maxcount=0;
+    int maxelse=0;
     int idx=0;
     for(int i=0;i<n;i++){
         int flagg=0;
@@ -18,7 +18,7 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            if(count>maxcount) maxcount=arr[i];
+            if(count>maxele) maxelse=arr[i];
         }
         count=0;
     } 
