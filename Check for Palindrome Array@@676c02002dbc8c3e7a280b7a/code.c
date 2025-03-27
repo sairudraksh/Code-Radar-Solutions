@@ -8,7 +8,7 @@ int main(){
     }
     int arr2[n];
     int k=0;
-    for(int i=n;i>=0;i--){
+    for(int i=n-1;i>=0;i--){
         arr2[k]=arr[i];
         k++;
     }
