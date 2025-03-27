@@ -1,6 +1,6 @@
 #include<stdio.h>
 void rotatearray(int i,int j,int arr[]){
-    while(i<=j){
+    while(i<j){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
@@ -17,7 +17,7 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    if(k>n){
+    if(k>=n){
         k=k%n;
     }
     rotatearray(0,k-1,arr);
