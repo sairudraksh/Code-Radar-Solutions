@@ -8,8 +8,9 @@ int main(){
     }
     int arr2[n];
     int k=0;
-    for(int i=n;i>=0;i++){
+    for(int i=n;i>=0;i--){
         arr2[k]=arr[i];
+        k++;
     }
     int bol=0;
     for(int i=0;i<n;i++){
