@@ -17,6 +17,7 @@ int main(){
         if(arr[i]!=arr2[i]){
             printf("%s","NO");
             bol=1;
+            break;
 
         }
     }
