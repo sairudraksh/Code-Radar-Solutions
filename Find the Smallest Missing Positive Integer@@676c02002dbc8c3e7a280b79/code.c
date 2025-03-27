@@ -6,27 +6,27 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int i=0;
-    int idx=0;
-    while(i<n-1){
-        int min=arr[i];
-        for(int j=i+1;j<n;j++){
-            if(arr[j]<=min){
-                min=arr[j];
-                idx=j;
-            }
+    while(i<n){
+        if(nums[i]<=0) i++;
+        else if(nums[i]>n || nums[i]==nums[nums[i]-1]) i++;
+        else{
+            int temp=nums[i];
+            nums[i]=nums[nums[i]-1];
+            nums[nums[i]-1]=temp;
         }
-        int temp=arr[idx];
-        arr[idx]=arr[i];
-        arr[idx]=temp;
-        i++;
-        idx=i;
+
     }
+    int flagg=0;
     for(int i=0;i<n;i++){
         if(arr[i]!=i+1){
-            printf("%d",i+1);
+            printf("%d",arr[i]);
+            flagg=1;
             break;
+
         }
+    }
+    if(flagg==0){
+        printf("%d",arr[n-1]+1);
     }
     
 }
