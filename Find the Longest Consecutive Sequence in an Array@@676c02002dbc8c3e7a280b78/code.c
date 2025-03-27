@@ -13,6 +13,7 @@ int main(){
         for(int j=i;j<n;j++){
             z++;
             if(arr[i]>arr[j]) count++;
+            else break;
         }
         if(count>maxcount) maxcount=count;
     }
