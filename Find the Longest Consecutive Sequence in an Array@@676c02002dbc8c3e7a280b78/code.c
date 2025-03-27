@@ -1,35 +1,39 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    int maxcount=1;
-    int z=0;
-    int count=1;
-    for(int i=z;i<n;i++){
-        count=1;
-        for(int j=i;j<n;j++){
-            if(arr[i]>arr[j+1]){
-                for(int k=0;k<n;k++){
-                    z++;
-                    if(arr[k]<arr[j]) count++;
-                    else break;
-                }
-            }
-            else if(arr[i]<arr[j+1]){
-                for(int l=0;l<n;l++){
-                    z++;
-                    if(arr[l]>arr[j]) count++;
-                    else break;
-                }
-            }
-            break;
+#include <stdio.h>
+#include <stdlib.h>
+
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+int longestConsecutive(int arr[], int n) {
+    if (n == 0) return 0;
+
+    qsort(arr, n, sizeof(int), compare);  // Sort the array in O(n log n)
+
+    int maxLen = 1, currLen = 1;
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] == arr[i - 1]) continue;  // Skip duplicates
+        if (arr[i] == arr[i - 1] + 1) {
+            currLen++;  // Increase the streak
+        } else {
+            maxLen = (currLen > maxLen) ? currLen : maxLen;
+            currLen = 1;  // Reset streak
         }
-        if(count>maxcount) maxcount=count;
     }
-    if(maxcount==n) printf("%d",1);
-    else printf("%d",maxcount);
+
+    return (currLen > maxLen) ? currLen : maxLen;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("%d\n", longestConsecutive(arr, n));
+    return 0;
 }
