@@ -22,18 +22,8 @@ int main(){
         i++;
         idx=i;
     }
-    vector<bool> present(n + 1, false); // Track presence of numbers in range [1, n]
-
-    // Mark numbers that are within range
-    for (int i = 0; i < n; i++) {
-        if (arr[i] > 0 && arr[i] <= n) {
-            present[arr[i]] = true;
-        }
-    }
-    for (int i = 1; i <= n; i++) {
-        if (!present[i]) {
-            return i;
-        }
+    for(int i=0;i<n;i++){
+        if(arr[i]!=i+1) printf("%d",i+1);
     }
     
 }
