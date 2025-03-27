@@ -4,8 +4,9 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",n);
+        scanf("%d",&arr[i]);
     }
+    int count=0;
     int flagg=0;
     for(int i=0;i<n;i++){
         for(int k=0;k<i;k++){
@@ -15,9 +16,10 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            printf("%d ",arr[i])
+            printf("%d ",arr[i]);
             printf("%d",count);
             printf(/n);
+            count=0;
         }
     } 
 }
