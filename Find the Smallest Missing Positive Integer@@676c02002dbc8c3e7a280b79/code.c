@@ -27,6 +27,7 @@ int main(){
         if(arr[i]+1!=arr[i+1] && arr[i+1]!=0){
             printf("%d",i+2);
             flagg=1;
+            break;
         }
     }
     if(flagg==0) printf("%d",arr[n-1]+1);
