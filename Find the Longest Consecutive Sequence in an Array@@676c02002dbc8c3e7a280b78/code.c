@@ -8,9 +8,9 @@ int main(){
     }
     int maxcount=1;
     int z=0;
-    int count=1;
+    int count=0;
     for(int i=z;i<n;i++){
-        count=1;
+        count=0;
         for(int j=i;j<n;j++){
             z++;
             if(arr[i]>arr[j]) count++;
