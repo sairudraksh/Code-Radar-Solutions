@@ -22,5 +22,5 @@ int main(){
         }
         count=0;
     } 
-    printf("%d",maxcount);
+    printf("%d",maxelse);
 }
