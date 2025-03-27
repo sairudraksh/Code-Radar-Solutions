@@ -8,6 +8,7 @@ int main(){
     }
     int count=0;
     int maxele=0;
+    int maxcount=0;
     int idx=0;
     for(int i=0;i<n;i++){
         int flagg=0;
@@ -18,7 +19,10 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            if(count>maxele) maxele=arr[i];
+            if(count>maxcount){
+                maxcount=count;
+                maxelse=arr[i];
+            }
         }
         count=0;
     } 
