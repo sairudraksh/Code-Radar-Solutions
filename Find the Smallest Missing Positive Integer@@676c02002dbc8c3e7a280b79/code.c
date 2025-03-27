@@ -6,14 +6,14 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    innt i=0;
+    int i=0;
     while(i<n){
-        if(nums[i]<=0) i++;
-        else if(nums[i]>n || nums[i]==nums[nums[i]-1]) i++;
+        if(arr[i]<=0) i++;
+        else if(arr[i]>n || arr[i]==arr[arr[i]-1]) i++;
         else{
-            int temp=nums[i];
-            nums[i]=nums[nums[i]-1];
-            nums[nums[i]-1]=temp;
+            int temp=arr[i];
+            arr[i]=arr[arr[i]-1];
+            arr[arr[i]-1]=temp;
         }
 
     }
