@@ -20,8 +20,8 @@ int main(){
     if(k>=n){
         k=k%n;
     }
-    rotatearray(0,k-1,arr);
-    rotatearray(k,n-1,arr);
+    rotatearray(0,n-k-1,arr);
+    rotatearray(n-k,n-1,arr);
     rotatearray(0,n-1,arr);
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
