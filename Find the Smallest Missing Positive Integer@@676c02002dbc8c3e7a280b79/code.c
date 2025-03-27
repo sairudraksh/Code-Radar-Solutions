@@ -22,14 +22,18 @@ int main(){
         i++;
         idx=i;
     }
-    int flagg=0;
-    for(int i=0;i<n-1;i++){
-        if(arr[i]+1!=arr[i+1] && arr[i+1]!=0){
-            printf("%d",i+1);
-            flagg=1;
-            break;
+    vector<bool> present(n + 1, false); // Track presence of numbers in range [1, n]
+
+    // Mark numbers that are within range
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > 0 && arr[i] <= n) {
+            present[arr[i]] = true;
         }
     }
-    if(flagg==0) printf("%d",arr[n-1]+1);
+    for (int i = 1; i <= n; i++) {
+        if (!present[i]) {
+            return i;
+        }
+    }
     
 }
