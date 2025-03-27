@@ -13,5 +13,5 @@ int main(){
         break;
     }
     if(flagg==1) printf("Sorted");
-    else prinf("Not Sorted");
+    else printf("Not Sorted");
 }
