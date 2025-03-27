@@ -9,9 +9,9 @@ int main(){
     int count=0;
     for(int i=0;i<n;i++){
         int flagg=0;
-        for(int k=0;k<i;k++){
-            if(arr[k]==arr[i]) flagg=1;
-        }
+        // for(int k=0;k<i;k++){
+        //     if(arr[k]==arr[i]) flagg=1;
+        // }
         if(flagg==0){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
