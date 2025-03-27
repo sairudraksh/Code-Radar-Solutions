@@ -25,7 +25,7 @@ int main(){
     int flagg=0;
     for(int i=0;i<n;i++){
         if(arr[i]+1!=arr[i+1] && arr[i+1]!=0){
-            printf("%d",arr[i]+1);
+            printf("%d",i+1);
             flagg=1;
         }
     }
