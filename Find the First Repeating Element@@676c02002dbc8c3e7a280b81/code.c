@@ -19,4 +19,5 @@ int main(){
             break;
         }
     }
+    if(flagg==0) printf("%d",-1);
 }
