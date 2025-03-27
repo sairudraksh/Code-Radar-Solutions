@@ -20,7 +20,7 @@ int main(){
     int flagg=0;
     for(int j=0;j<n;j++){
         if(arr[j]!=j+1){
-            printf("%d",arr[j]);
+            printf("%d",j+1);
             flagg=1;
             break;
 
