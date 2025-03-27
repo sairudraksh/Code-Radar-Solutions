@@ -30,6 +30,6 @@ int main(){
         }
         if(count>maxcount) maxcount=count;
     }
-    if(count==n) printf("%d",1);
-    else printf("%d",maxcount);
+    if(count+1==n) printf("%d",1);
+    else printf("%d",maxcount+1);
 }
