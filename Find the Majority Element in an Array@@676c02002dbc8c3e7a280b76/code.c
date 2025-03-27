@@ -13,7 +13,7 @@ int main(){
             if(arr[j]==arr[i]) count++;
         }
         if(count>(n/2)){
-            printf("%d",count);
+            printf("%d",arr[j]);
             flagg=1;
             break;
         }
