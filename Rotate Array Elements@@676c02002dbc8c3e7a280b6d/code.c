@@ -17,8 +17,8 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    rotatearray(0,k,arr);
-    rotatearray(k+1,n-1,arr);
+    rotatearray(0,k-1,arr);
+    rotatearray(k,n-1,arr);
     rotatearray(0,n-1,arr);
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
