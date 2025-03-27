@@ -14,13 +14,13 @@ int main(){
     int bol=0;
     for(int i=0;i<n;i++){
         if(arr[i]!=arr2[i]){
-            printf("%s","NO");
+            // printf("%s","NO");
             bol=1;
 
         }
     }
-    if(bol==0){
-        printf("%s","YES");
-    }
+    // if(bol==0){
+    //     printf("%s","YES");
+    // }
 
 }
