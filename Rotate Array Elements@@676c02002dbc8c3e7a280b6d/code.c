@@ -19,6 +19,6 @@ int main(){
     rotatearray(0,n-1,arr);
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
-        printf(\n);
+        printf("\n");
     }
 }
