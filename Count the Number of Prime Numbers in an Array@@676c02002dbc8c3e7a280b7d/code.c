@@ -17,7 +17,7 @@ int main(){
     }
     int count=0;
     for(int i=0;i<n;i++){
-        int a=isprime(i);
+        int a=isprime(arr[i]);
         if(a==1) count++;
     }
     printf("%d",count);
