@@ -23,7 +23,10 @@ int main(){
         idx=i;
     }
     for(int i=0;i<n;i++){
-        if(arr[i]!=i+1) printf("%d",i+1);
+        if(arr[i]!=i+1){
+            printf("%d",i+1);
+            break
+        }
     }
     
 }
