@@ -11,7 +11,7 @@ int main(){
     while(i<n){
         int b=arr[i]
         sum=sum+b;
-        printf("%d",sum);
+        printf("%d ",sum);
         i++;
     }
 }
