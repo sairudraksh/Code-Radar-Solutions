@@ -20,10 +20,11 @@ int main(){
         arr[idx]=arr[i];
         arr[idx]=temp;
         i++;
+        idx=i;
     }
     for(int i=0;i<n;i++){
-        if(arr[i]!=i){
-            printf("%d",i);
+        if(arr[i]+1!=i){
+            printf("%d",i+1);
             break;
         }
     }
