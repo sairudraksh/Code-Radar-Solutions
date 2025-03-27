@@ -23,7 +23,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(arr[i]!=i){
-            printf("%d",i+1);
+            printf("%d",i);
             break;
         }
     }
