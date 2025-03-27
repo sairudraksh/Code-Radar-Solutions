@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count=0;
-    int maxcount=arr[0];
+    int maxcount=0;
     int idx=0;
     for(int i=0;i<n;i++){
         int flagg=0;
@@ -19,8 +19,8 @@ int main(){
                 if(arr[j]==arr[i]) count++;
             }
             if(count>maxcount) maxcount=arr[i];
-            count=0;
         }
+        count=0;
     } 
     printf("%d",maxcount);
 }
