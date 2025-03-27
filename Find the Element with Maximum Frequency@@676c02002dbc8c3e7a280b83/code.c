@@ -18,7 +18,7 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            if(count>maxcount) maxcount=arr[i+1];
+            if(count>maxcount) maxcount=arr[i];
             count=0;
         }
     } 
