@@ -14,6 +14,7 @@ int main(){
                     arr[j]=arr[i];
                     arr[i]=temp;
                 }
+                break;
             }
         }
     }
