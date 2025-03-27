@@ -20,7 +20,7 @@ int main(){
     }
     int arr2[n];
     for(int i=0;i<n;i++){
-        arr2[i]=summ(|arr[i]|);
+        arr2[i]=summ(arr[i]);
     }
     for(int i=0;i<n;i++){
         printf("%d ",arr2[i]);
