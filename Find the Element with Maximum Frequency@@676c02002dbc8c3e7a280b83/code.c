@@ -18,7 +18,7 @@ int main(){
             for(int j=0;j<n;j++){
                 if(arr[j]==arr[i]) count++;
             }
-            if(arr[i]>maxele) maxele=arr[i];
+            if(count>maxele) maxele=arr[i];
         }
         count=0;
     } 
