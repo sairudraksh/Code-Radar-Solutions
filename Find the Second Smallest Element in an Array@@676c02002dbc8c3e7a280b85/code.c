@@ -10,9 +10,15 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]<min) min=arr[i];
     }
-    int smin=-1;
+    int flagg=0;
+    int smin=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]<smin && arr[i]>min) smin=arr[i];
+        if(arr[i]<smin && arr[i]>min){
+            smin=arr[i];
+            flagg=1;
+
+        }
     }
-    printf("%d",smin);
+    if(flagg==0) printf("%d",-1);
+    else printf("%d",smin);
 }
