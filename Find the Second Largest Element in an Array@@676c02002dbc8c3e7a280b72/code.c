@@ -12,7 +12,7 @@ int main(){
     }
     int smax;
     if(max==arr[0]) smax=arr[1];
-    else smax==0;
+    else smax=0;
     int flagg=0;
     for(int i=0;i<n;i++){
         if(arr[i]>=smax && arr[i]<max){
