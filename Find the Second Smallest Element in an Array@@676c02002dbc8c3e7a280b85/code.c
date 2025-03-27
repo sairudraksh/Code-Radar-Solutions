@@ -11,9 +11,9 @@ int main(){
         if(arr[i]<min) min=arr[i];
     }
     int flagg=0;
-    int smin=arr[0];
+    int smin=1000;
     for(int i=0;i<n;i++){
-        if(arr[i]<smin && arr[i]>min){
+        if(arr[i]>min && arr[i]<smin){
             smin=arr[i];
             flagg=1;
 
