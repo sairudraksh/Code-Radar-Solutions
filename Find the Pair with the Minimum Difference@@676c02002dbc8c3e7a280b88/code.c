@@ -11,7 +11,7 @@ int main(){
     int mindiff=110000;
     int idx1=0;
     int idx2=0;
-    qsort(arr, n, sizeof(arr),compare);
+    qsort(arr, n, sizeof(int),compare);
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
             if(arr[j]>=arr[i]){
