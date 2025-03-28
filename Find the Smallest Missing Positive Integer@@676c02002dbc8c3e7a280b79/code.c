@@ -25,6 +25,6 @@ int main(){
             break;
         }
     }
-    if(flagg==0) printf("%d",n+1;)
+    if(flagg==0) printf("%d",arr[n-1]+1);
    
 }
