@@ -1,4 +1,4 @@
-void trachPlayer(int ranked[],int n,int player[],int resul[]){
+void trachPlayer(int ranked[],int n,int player[],int result[]){
     int x=1;
     int k=0;
     for(int i=0;i<m;i++){
@@ -11,7 +11,7 @@ void trachPlayer(int ranked[],int n,int player[],int resul[]){
                 break;
             }
             else if(ranked[j]<player[i]){
-                arr[k]=x;
+                result[k]=x;
                 k++;
                 x=1;
                 break;
