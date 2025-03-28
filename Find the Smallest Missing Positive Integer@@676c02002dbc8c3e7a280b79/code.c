@@ -12,8 +12,8 @@ int main(){
         else if(arr[i]==arr[arr[i]-1] || arr[i]>n) i++;
         else {
             int temp=arr[i];
-            arr[i]=arr[arr[i]-1];
-            arr[arr[i]-1]=temp;
+            arr[i]=arr[temp-1];
+            arr[temp-1]=temp;
         }
     }  
     for(int i=0;i<n;i++){
