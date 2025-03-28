@@ -5,7 +5,7 @@ void trachPlayer(int ranked[],int n,int player[],int m,int result[]){
         for(int j=0;j<n;j++){
             if(ranked[j]==n-1 && ranked[j]<player[i]){
                 printf("%d\n",x+1);
-                arr[k]=x;
+                result[k]=x;
                 k++;
                 x=1;
                 break;
