@@ -6,6 +6,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int i=0;
     while(i<n){
         if(arr[i]<0) i++;
         else if(arr[i]=arr[arr[i]-1] || arr[i]>n) i++;
