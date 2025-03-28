@@ -15,6 +15,7 @@ int main(){
             int temp=arr[i];
             arr[i]=arr[correctidx];
             arr[correctidx]=temp;
+            i++;
         }
     }  
     for(int i=0;i<n;i++){
