@@ -26,6 +26,6 @@ int main(){
             diff=0;
         }
     }
-    printf("%d ",arr[i]);
-    printf("%d",arr[j])
+    printf("%d ",idx1);
+    printf("%d",idx2);
 }
