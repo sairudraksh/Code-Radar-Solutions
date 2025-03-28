@@ -1,12 +1,13 @@
 #include<stdio.h>
 int palindrome(int n){
     int sum=0;
+    int k=n;
     while(n>0){
         int num=n%10;
         sum=(sum*10)+num;
         n=n/10;
     }
-    if(n==sum) return 1;
+    if(k==sum) return 1;
     else return 0;
 }
 int main(){
