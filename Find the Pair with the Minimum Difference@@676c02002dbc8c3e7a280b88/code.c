@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int diff=0;
-    int mindiff=0;
+    int mindiff=110000;
     int idx1=0;
     int idx2=0;
     for(int i=0;i<n-1;i++){
