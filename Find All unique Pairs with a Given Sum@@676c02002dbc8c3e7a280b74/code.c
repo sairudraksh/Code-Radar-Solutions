@@ -13,8 +13,8 @@ int main(){
             if(arr[i]+arr[j]==target){
                 printf("%d ",arr[i]);
                 printf("%d",arr[j]);
+                printf("\n");
             }
         }
-        printf("\n");
     }
 }
