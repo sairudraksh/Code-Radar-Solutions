@@ -11,7 +11,7 @@ int main(){
         for(int j=i+1;j<n;j++){
             if(arr[i]<arr[j]) flagg=1;
         }
-        if(flagg==0) printf("%d",arr[i]);
+        if(flagg==0) printf("%d ",arr[i]);
         flagg=0;
     }
 }
