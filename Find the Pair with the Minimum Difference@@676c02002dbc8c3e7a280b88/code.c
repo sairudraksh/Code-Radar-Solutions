@@ -19,6 +19,6 @@ int main(){
 
         }
     }
-    printf("%d ",smin);
-    printf("%d",min);
+    printf("%d ",min);
+    printf("%d",smin);
 }
