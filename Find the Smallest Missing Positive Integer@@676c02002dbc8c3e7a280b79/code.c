@@ -11,10 +11,12 @@ int main(){
         int correctidx=arr[i]-1;
         if(arr[i]<=0) i++;
         else if(arr[i]==arr[arr[i]-1] || arr[i]>n) i++;
-        else {
+        else if(arr[i]!=arr[correctidx]) {
             int temp=arr[i];
             arr[i]=arr[correctidx];
             arr[correctidx]=temp;
+        }
+        else{
             i++;
         }
     }  
