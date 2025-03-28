@@ -6,7 +6,7 @@ int palindrome(int n){
         sum=(sum*10)+num;
         num=num/10;
     }
-    if(n==num) return 1;
+    if(n==sum) return 1;
     else return 0;
 }
 int main(){
