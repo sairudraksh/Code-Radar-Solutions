@@ -26,11 +26,12 @@ int main(){
             diff=0;
         }
     }
-    if(idx2<=idx1){
+    if(n==1) printf("%d",-1);
+    else if(idx2<=idx1){
         printf("%d ",idx2);
         printf("%d",idx1);
     } 
-    if(idx2>idx1){
+    else if(idx2>idx1){
         printf("%d ",idx1);
         printf("%d",idx2);
     } 
