@@ -1,4 +1,4 @@
-void trachPlayer(int ranked[],int n,int player[],int result[]){
+void trachPlayer(int ranked[],int n,int player[],int m,int result[]){
     int x=1;
     int k=0;
     for(int i=0;i<m;i++){
