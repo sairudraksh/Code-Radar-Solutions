@@ -15,7 +15,7 @@ int main(){
                 if(bool==1) continue;
                 printf("%d ",arr[i]);
                 printf("%d",arr[j]);
-                if(i==j) bool=1;
+                if(arr[i]==arr[j]) bool=1;
                 printf("\n");
             }
         }
