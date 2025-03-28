@@ -7,20 +7,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int flagg=0;
-    int idx=0;
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
-                flagg=1;
-                break;
-            }
-        } 
-        if(flagg==0){
-            idx=i;
-            break;
+            if(arr[i]<arr[j]) flagg=1;
         }
-    }
-    for(int i=idx;i<n;i++){
-        printf("%d ",arr[i]);
+        if(flagg==0) printf("%d",arr[i]);
+        flagg=0;
     }
 }
