@@ -17,6 +17,7 @@ int main(){
                 diff=arr[i]-arr[j];
             }
             if(diff>mindiff) mindiff=diff;
+            diff=0;
         }
     }
     printf("%d",mindiff);
