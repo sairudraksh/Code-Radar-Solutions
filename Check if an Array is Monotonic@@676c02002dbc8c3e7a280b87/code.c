@@ -10,18 +10,20 @@ int main(){
     int i=0;
     if(arr[i]<arr[i+1]){
         for(int j=i+1;j<n-1;j++){
-            if(arr[j]!<arr[j+1])
-            flagg=1;
-            break;
+            if(arr[j]!<arr[j+1]){
+                flagg=1;
+                break;
+            }
         }
     }
     if(arr[i]>arr[i+1]){
         for(int j=i+1;j<n-1;j++){
-            if(arr[j]!>arr[j+1])
-            flagg=1;
-            break;
+            if(arr[j]!>arr[j+1]){
+                flagg=1;
+                break;
+            }
         }
     }
-    if(flagg==1) printf("%s","NO")
+    if(flagg==1) printf("%s","NO");
     else printf("%s","YES");
 }
