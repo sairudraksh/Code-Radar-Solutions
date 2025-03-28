@@ -8,6 +8,8 @@ int main(){
     }
     int diff=0;
     int mindiff=0;
+    int idx1=0;
+    int idx2=0;
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
             if(arr[j]>=arr[i]){
@@ -16,9 +18,14 @@ int main(){
             else{
                 diff=arr[i]-arr[j];
             }
-            if(diff>mindiff) mindiff=diff;
+            if(diff>mindiff){
+                mindiff=diff;
+                idx1=arr[i];
+                idx2=arr[j];
+            }
             diff=0;
         }
     }
-    printf("%d",mindiff);
+    printf("%d ",arr[i]);
+    printf("%d",arr[j])
 }
