@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -10,6 +11,7 @@ int main(){
     int mindiff=110000;
     int idx1=0;
     int idx2=0;
+    qsort(arr, n, sizeof(int), compare);
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
             if(arr[j]>=arr[i]){
@@ -18,7 +20,7 @@ int main(){
             else{
                 diff=arr[i]-arr[j];
             }
-            if(diff<mindiff && diff !=mindiff){
+            if(diff<mindiff){
                 mindiff=diff;
                 idx1=arr[i];
                 idx2=arr[j];
