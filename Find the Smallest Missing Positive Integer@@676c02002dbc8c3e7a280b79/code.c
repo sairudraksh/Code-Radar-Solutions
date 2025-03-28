@@ -9,7 +9,7 @@ int main(){
     int i=0;
     while(i<n){
         if(arr[i]<=0) i++;
-        else if(arr[i]=arr[arr[i]-1] || arr[i]>n) i++;
+        else if(arr[i]==arr[arr[i]-1] || arr[i]>n) i++;
         else {
             int temp=arr[i];
             arr[i]=arr[arr[i]-1];
