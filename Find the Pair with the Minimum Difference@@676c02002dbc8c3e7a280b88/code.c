@@ -26,7 +26,7 @@ int main(){
             diff=0;
         }
     }
-    if(idx2<idx1){
+    if(idx2<=idx1){
         printf("%d ",idx2);
         printf("%d",idx1);
     } 
