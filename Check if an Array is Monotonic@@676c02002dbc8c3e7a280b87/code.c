@@ -10,7 +10,7 @@ int main(){
     int i=0;
     if(arr[i]<=arr[i+1]){
         for(int j=i+1;j<n-1;j++){
-            if(arr[j]!<arr[j+1]){
+            if(arr[j]>arr[j+1]){
                 flagg=1;
                 break;
             }
@@ -18,7 +18,7 @@ int main(){
     }
     if(arr[i]>=arr[i+1]){
         for(int j=i+1;j<n-1;j++){
-            if(arr[j]!>arr[j+1]){
+            if(arr[j]<arr[j+1]){
                 flagg=1;
                 break;
             }
