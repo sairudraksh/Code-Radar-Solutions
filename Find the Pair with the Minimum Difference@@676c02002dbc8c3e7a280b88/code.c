@@ -6,19 +6,18 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int min=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]<min) min=arr[i];
-    }
-    int flagg=0;
-    int smin=1000;
-    for(int i=0;i<n;i++){
-        if(arr[i]>min && arr[i]<smin){
-            smin=arr[i];
-            flagg=1;
-
+    int diff=0;
+    int mindiff=0;
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[j]>=arr[i]){
+                diff=arr[j]-arr[i];
+            }
+            else{
+                diff=arr[i]-arr[j];
+            }
+            if(diff>mindiff) mindiff=diff;
         }
     }
-    printf("%d ",min);
-    printf("%d",smin);
+    printf("%d",mindiff);
 }
