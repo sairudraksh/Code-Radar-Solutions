@@ -9,13 +9,13 @@ int main(){
     int max=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]>max){
-            max=arr[i]
+            max=arr[i];
         }
     }
     int smax=-100;
     for(int i=0;i<n;i++){
         if(smax>arr[i] && arr[i] <max ){
-            smax=arr[i]
+            smax=arr[i];
         }
     }
     printf("%d",smax);
