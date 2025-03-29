@@ -13,10 +13,14 @@ int main(){
         }
     }
     int smax=-100;
+    int x=0;
     for(int i=0;i<n;i++){
         if(arr[i]>smax && arr[i] <max ){
             smax=arr[i];
+            x=1;
         }
     }
-    printf("%d",smax);
+    if(x==1){
+        printf("%d",smax);
+    }else printf("%d",-1);
 }
