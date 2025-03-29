@@ -12,7 +12,7 @@ int main(){
             max=arr[i];
         }
     }
-    int smax=10000;
+    int smax=0;
     int x=0;
     for(int i=0;i<n;i++){
         if(arr[i]>smax && arr[i]<max){
