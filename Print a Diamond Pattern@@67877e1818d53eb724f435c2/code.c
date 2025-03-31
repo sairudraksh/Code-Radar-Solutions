@@ -13,7 +13,7 @@ int main(){
         }
         if(i<=n-1){
             nsp--;
-            nst+=2
+            nst+=2;
         }
         else{
             nsp--;
