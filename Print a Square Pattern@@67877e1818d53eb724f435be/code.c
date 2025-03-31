@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -7,5 +7,5 @@ int main(){
             printf("* ");
         }
         printf("\n");
-    }    
+    }
 }
