@@ -1,19 +1,18 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
     int nsp=n-1;
-    int nst=1;
-    for(int k=0;k<n;k++){
-        for(int i=0;i<nsp;i++){
+    for(int i=0;i<n;i++){
+        int a=1;
+        for(int j=1;j<=nsp;j++){
             printf(" ");
         }
-        for(int k=1;k<=nst;k++){
-            printf("%d",k);
-            printf(" ");
+        for(int k=1;k<=i;k++){
+            printf("%d ",a);
+            a++;
         }
         nsp--;
-        nst+=1;
         printf("\n");
     }
 }
