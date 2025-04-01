@@ -2,10 +2,25 @@
 int main(){
     int n;
     scanf("%d",&n);
-    if(n==5){
-        printf("%d",4);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-    else if(n==4){
-        printf("%d",30);
+    int max=arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
     }
+    int smax=-100;
+    int x=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>smax && arr[i] <max ){
+            smax=arr[i];
+            x=1;
+        }
+    }
+    if(x==1){
+        printf("%d",smax);
+    }else printf("%d",-1);
 }
