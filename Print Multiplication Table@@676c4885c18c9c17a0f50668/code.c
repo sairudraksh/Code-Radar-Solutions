@@ -8,5 +8,6 @@ int main(){
         printf("%d ",i);
         printf("= ");
         printf("%d",n*i);
+        printf("\n");
     }
 }
