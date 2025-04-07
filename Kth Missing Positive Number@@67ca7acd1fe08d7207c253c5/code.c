@@ -1,5 +1,5 @@
 int findKthMissing(int arr[],int n,int k){
-    int z=k
+    int z=k;
     int nums[arr[n-1]];
     for(int i=0;i<arr[n-1];i++){
         nums[i]=0;
